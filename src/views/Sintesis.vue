@@ -2,13 +2,15 @@
 .curso-main-container.pb-3
   BannerInterno(icono="fas fa-sitemap" titulo="Síntesis")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt erat. Fusce cursus mauris in nulla egestas vulputate. Phasellus viverra accumsan libero, sed luctus diam maximus euismod. Mauris sem risus, tincidunt vel libero in, lobortis commodo ante. Sed pulvinar luctus orci in rhoncus. Nulla ut dapibus risus, ac tempor est. Donec nulla augue, vehicula quis malesuada vitae, fermentum non nisi. Donec tincidunt nibh a magna bibendum rutrum. 
+    p La computación en la nube ha transformado la forma en que las organizaciones gestionan su infraestructura tecnológica, pasando de entornos físicos tradicionales a servicios virtualizados, escalables y disponibles bajo demanda. Para ello, es fundamental comprender los modelos de servicio (IaaS, PaaS y SaaS) y los modelos de despliegue (público, privado e híbrido), permitiendo seleccionar soluciones acordes con las necesidades del negocio y optimizar recursos tecnológicos y financieros.
+    p La computación en la nube ha transformado la forma en que las organizaciones gestionan su infraestructura tecnológica, pasando de entornos físicos tradicionales a servicios virtualizados, escalables y disponibles bajo demanda. Para ello, es fundamental comprender los modelos de servicio (IaaS, PaaS y SaaS) y los modelos de despliegue (público, privado e híbrido), permitiendo seleccionar soluciones acordes con las necesidades del negocio y optimizar recursos tecnológicos y financieros.
+
     
 
     .row.justify-content-center
       .col-lg-10.mb-5.bgs.p-4.brad
         figure
-          img(src="@/assets/curso/sintesis.svg", alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt erat. Fusce cursus mauris in nulla egestas vulputate. Phasellus viverra accumsan libero, sed luctus diam maximus euismod. Mauris sem risus, tincidunt vel libero in, lobortis commodo ante. Sed pulvinar luctus orci in rhoncus. Nulla ut dapibus risus, ac tempor est. Donec nulla augue, vehicula quis malesuada vitae, fermentum non nisi. Donec tincidunt nibh a magna bibendum rutrum. ")
+          img(src="@/assets/curso/sintesis.svg", alt="El contenido presenta una visión integral de la implementación de servicios en la nube, organizada en cuatro ejes principales: fundamentos del Cloud Computing, despliegue y migración de servicios, infraestructura de almacenamiento y gestión de datos, y seguridad con continuidad operativa. Incluye los modelos de servicio y despliegue, el análisis de requerimientos para la migración, los tipos de almacenamiento y bases de datos, así como las estrategias de protección de la información, control de accesos, respaldo, monitoreo y recuperación ante fallos para garantizar la disponibilidad y confiabilidad de los servicios.")
       .col-auto
         a.anexo.mb-5(:href="obtenerLink('/downloads/Sintesis.pdf')" target="_blank")
           .anexo__icono

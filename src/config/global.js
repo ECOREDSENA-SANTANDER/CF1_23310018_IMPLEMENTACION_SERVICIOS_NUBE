@@ -1,8 +1,8 @@
 export default {
   global: {
-    Name: 'Nombre del recurso educativo',
-    Description: 'Descripción del RED',
-    imagenBannerPrincipal: '@/assets/curso/portada/banner-principal.svg',
+    Name: 'Fundamentos de infraestructura y almacenamiento en la nube',
+    Description: 'El componente Fundamentos de infraestructura y almacenamiento en la nube desarrolla habilidades técnicas para analizar, desplegar y administrar infraestructuras tecnológicas en entornos virtualizados desde una perspectiva estratégica y de resolución de problemas. Promueve la configuración eficiente de recursos, la gestión segura del almacenamiento de datos y la construcción de soluciones escalables alineadas con los requerimientos técnicos y las necesidades operativas de la organización.',
+    imagenBannerPrincipal: '@/assets/curso/portada/banner-principal.png',
     fondoBannerPrincipal: '@/assets/curso/portada/fondo-banner-principal.png',
     imagenesDecorativasBanner: [
       {
@@ -12,6 +12,10 @@ export default {
       {
         clases: ['banner-principal-decorativo-2', 'd-none', 'd-lg-block'],
         imagen: '@/assets/curso/portada/banner-principal-decorativo-2.svg',
+      },
+      {
+        clases: ['banner-principal-decorativo-3', 'd-none', 'd-lg-block'],
+        imagen: '@/assets/curso/portada/banner-principal-decorativo-3.svg',
       },
     ],
   },
@@ -31,29 +35,113 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Tema 1',
+        titulo: 'Cloud computing como base de la transformación digital',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Subtema 1',
-            hash: 't_1_1',
+            titulo: 'Concepto y evolución del cloud computing',
+            hash: 't_1_1'
           },
-        ],
+          {
+            numero: '1.2',
+            titulo: 'Análisis de posibilidades actuales y factor de cambio comercial',
+            hash: 't_1_2'
+          },
+          {
+            numero: '1.3',
+            titulo: 'Infraestructura tecnológica tradicional frente a la nube',
+            hash: 't_1_3'
+          }
+        ]
       },
-
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Tema 2',
+        titulo: 'Arquitectura y modelos de servicio en la nube',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '2.1',
+            titulo: 'Tipos de servicios: infraestructura (IaaS), plataforma (PaaS) y software (SaaS)',
+            hash: 't_2_1'
+          },
+          {
+            numero: '2.2',
+            titulo: 'Modelos de despliegue: nube pública, privada e infraestructuras híbridas (on-premises – nube)',
+            hash: 't_2_2'
+          },
+          {
+            numero: '2.3',
+            titulo: 'Identificación de requisitos de hardware y software en entornos virtualizados',
+            hash: 't_2_3'
+          }
+        ]
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Tema 3',
+        titulo: 'Migración e implementación inicial de servicios',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '3.1',
+            titulo: 'Análisis de necesidades y requerimientos no funcionales',
+            hash: 't_3_1'
+          },
+          {
+            numero: '3.2',
+            titulo: 'Diferencia de elementos y procedimientos operativos en la nube',
+            hash: 't_3_2'
+          },
+          {
+            numero: '3.3',
+            titulo: 'Estrategias metodológicas para la migración de servicios',
+            hash: 't_3_3'
+          }
+        ]
       },
+      {
+        nombreRuta: 'tema4',
+        numero: '4',
+        titulo: 'Infraestructura de almacenamiento en la nube',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '4.1',
+            titulo: 'Modelos de almacenamiento estructurados y no estructurados',
+            hash: 't_4_1'
+          },
+          {
+            numero: '4.2',
+            titulo: 'Tipos y aplicación de servicios de almacenamiento gestionado',
+            hash: 't_4_2'
+          }
+        ]
+      },
+      {
+        nombreRuta: 'tema5',
+        numero: '5',
+        titulo: 'Gestión de bases de datos y seguridad de la información',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '5.1',
+            titulo: 'Administración de bases de datos en entornos cloud',
+            hash: 't_5_1'
+          },
+          {
+            numero: '5.2',
+            titulo: 'Seguridad de los datos y estrategias de respaldo (backups)',
+            hash: 't_5_2'
+          },
+          {
+            numero: '5.3',
+            titulo: 'Configuración inicial, escalabilidad y monitoreo continuo',
+            hash: 't_5_3'
+          }
+        ]
+      }
     ],
     subMenu: [
       {
@@ -97,14 +185,114 @@ export default {
   },
   glosario: [
     {
-      termino: 'Término',
-      significado: 'Definición',
+      termino: 'Alta disponibilidad (high availability)',
+      significado: 'característica de una infraestructura tecnológica que garantiza un funcionamiento continuo y sin interrupciones durante un periodo prolongado, generalmente mitigando la existencia de puntos únicos de fallo.',
+    },
+    {
+      termino: 'Autoescalamiento (auto-scaling)',
+      significado: 'servicio de computación en la nube que ajusta dinámicamente, y de forma automatizada, la cantidad de recursos computacionales asignados en función de las fluctuaciones en la demanda de los usuarios.',
+    },
+    {
+      termino: 'Cloud computing (computación en la nube)',
+      significado: 'modelo de entrega de recursos de tecnología de la información a través de internet, basado en un esquema de pago por uso, que incluye almacenamiento, procesamiento y bases de datos.',
+    },
+    {
+      termino: 'DBaaS (Database as a Service)',
+      significado: 'modelo de servicio en la nube donde el proveedor gestiona las tareas administrativas de una base de datos (como actualizaciones, copias de seguridad y parches), permitiendo al usuario enfocarse únicamente en el uso de los datos.',
+    },
+    {
+      termino: 'IaaS (Infrastructure as a Service)',
+      significado: 'modelo de servicio que proporciona recursos informáticos virtualizados a través de internet, como máquinas virtuales, almacenamiento y redes, otorgando al cliente el control sobre el sistema operativo.',
+    },
+    {
+      termino: 'IOPS (Input/Output Operations Per Second)',
+      significado: 'métrica de rendimiento utilizada para medir la velocidad de los dispositivos de almacenamiento, indicando cuántas operaciones de lectura y escritura puede realizar un disco en un segundo.',
+    },
+    {
+      termino: 'Latencia',
+      significado: 'el tiempo de retardo que transcurre desde que un sistema envía una solicitud de datos hasta que recibe la respuesta. En arquitecturas cloud, se busca que la latencia sea lo más baja posible (milisegundos).',
+    },
+    {
+      termino: 'Modelo de responsabilidad compartida',
+      significado: 'marco de seguridad en la computación en la nube que dicta qué aspectos de la seguridad operativa son responsabilidad del proveedor (la infraestructura física) y cuáles corresponden al cliente (los datos y accesos).',
+    },
+    {
+      termino: 'Nube híbrida',
+      significado: 'entorno de computación que combina una nube pública y una nube privada, permitiendo que los datos y las aplicaciones se compartan entre ellas para lograr mayor flexibilidad.',
+    },
+    {
+      termino: 'Nube privada',
+      significado: 'modelo de despliegue donde los servicios y la infraestructura de la nube se mantienen en una red privada y se utilizan exclusivamente para una única organización.',
+    },
+    {
+      termino: 'Nube pública',
+      significado: 'arquitectura informática donde los recursos (servidores, almacenamiento) pertenecen a un proveedor externo y se ofrecen a múltiples organizaciones simultáneamente a través de internet.',
+    },
+    {
+      termino: 'On-premises',
+      significado: 'modelo tradicional de infraestructura donde los servidores, redes y almacenamiento se encuentran físicamente instalados y gestionados dentro de las instalaciones de la propia organización.',
+    },
+    {
+      termino: 'PaaS (Platform as a Service)',
+      significado: 'modelo de servicio en la nube que proporciona a los desarrolladores un entorno completo (hardware y software subyacente) para crear, ejecutar y gestionar aplicaciones sin preocuparse por la infraestructura.',
+    },
+    {
+      termino: 'Rehosting (lift and shift)',
+      significado: 'estrategia de migración a la nube que consiste en trasladar una aplicación y sus datos desde un entorno físico hacia la nube sin modificar su arquitectura o código fuente.',
+    },
+    {
+      termino: 'RPO (Recovery Point Objective)',
+      significado: 'métrica de continuidad del negocio que define la cantidad máxima de pérdida de datos que una organización está dispuesta a tolerar tras un incidente, medida en tiempo (ej. datos de la última hora).',
+    },
+    {
+      termino: 'RTO (Recovery Time Objective)',
+      significado: 'métrica que establece el tiempo máximo de inactividad permitido desde que ocurre un fallo en el sistema hasta que el servicio debe estar restaurado y operativo nuevamente.',
+    },
+    {
+      termino: 'SaaS (Software as a Service)',
+      significado: 'modelo de servicio donde el proveedor aloja y mantiene una aplicación de software y la infraestructura subyacente, entregándola a los usuarios finales a través de un navegador web.',
+    },
+    {
+      termino: 'Snapshot (instantánea)',
+      significado: 'copia de seguridad del estado y los datos de una máquina virtual o un volumen de almacenamiento en un momento exacto y específico en el tiempo.',
+    },
+    {
+      termino: 'VPC (Virtual Private Cloud)',
+      significado: 'red virtual segura y aislada lógicamente dentro de una nube pública, donde las organizaciones pueden desplegar recursos controlando su propio entorno de red, como direcciones IP y firewalls.',
     },
   ],
   referencias: [
     {
-      referencia: '---',
-      link: '---',
+      referencia: 'Amazon Web Services. (2023). AWS Well-Architected Framework. AWS.',
+      link: '',
+    },
+    {
+      referencia: 'Furht, B., & Escalante, A. (2010). Handbook of Cloud Computing. Springer.',
+      link: '',
+    },
+    {
+      referencia: 'Google Cloud. (2023). Architecture Framework. Google Cloud Architecture Center.',
+      link: '',
+    },
+    {
+      referencia: 'Marinescu, D. C. (2022). Cloud Computing: Theory and Practice (3a ed.). Morgan Kaufmann.',
+      link: '',
+    },
+    {
+      referencia: 'Microsoft. (2023). Azure Fundamentals. Microsoft Learn.',
+      link: '',
+    },
+    {
+      referencia: 'Microsoft. (2023). Cloud adoption framework for Azure. Microsoft Learn.',
+      link: '',
+    },
+    {
+      referencia: 'Erl, T., Puttini, R. & Mahmood, Z. (2013). Cloud Computing: Concepts, Technology & Architecture. Pearson.',
+      link: '',
+    },
+    {
+      referencia: 'Wheeler, A., & Winburn, M., (2015). Cloud Storage Security: A Practical Guide (Computer Science Reviews and Trends). Elsevier.',
+      link: '',
     },
   ],
   creditos: [
@@ -143,7 +331,7 @@ export default {
           centro: 'Centro Agroturístico - Regional Santander',
         },
         {
-          nombre: ' ',
+          nombre: 'Andrea Paola Botello De la Rosa',
           cargo: 'Desarrollador <i>full stack</i>',
           centro: 'Centro Agroturístico - Regional Santander',
         },
