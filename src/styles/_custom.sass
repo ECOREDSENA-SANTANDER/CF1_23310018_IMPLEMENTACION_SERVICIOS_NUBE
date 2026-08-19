@@ -3,56 +3,66 @@
   &-1
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 68%
-    left: -10%
-    width: 20%
+    top: 30%
+    left: 12%
+    width: 18%
   &-2
     animation: float1 2.5s ease-in-out infinite alternate
     position: absolute
-    top: 30%
-    right: 10%
-    width: 20%
-
-
+    top: 21%
+    right: 13%
+    width: 17%
+  &-3
+    animation: float1 2.5s ease-in-out infinite alternate
+    position: absolute
+    top: 62%
+    right: 13%
+    width: 18%
 @keyframes float1
   0%
     transform: translateY(20px)
-
   100%
     transform: translateY(0px)
+
 
 .col-lg-7.col-xxl-5.ps-4.ps-sm-5.py-4.py-sm-5.banner-principal__info
   flex: 0 0 auto !important
   width: 58.33333333% !important
 .banner-principal__img 
-  padding-bottom: 0 !important;
+  padding-bottom: 0 !important
 .banner-principal__row .banner-principal__img 
-    width: 33%;
+  width: 33%
     
-.banner-principal p, .banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6
-  color: $color-sistema-texto !important  
-
 .boton *, .boton--sm *,
 .barra-avance__boton--regresar span
   color: $white !important
-.banner-interno__titulo h1, .banner-interno__titulo h2, 
-.banner-interno__titulo h3, .banner-interno__titulo h4, 
-.banner-interno__titulo h5, .banner-interno__titulo h6
-  color: $color-sistema-texto !important  
 .titulo-principal.color-acento-contenido .titulo-principal__numero span
   color: $white !important
 figcaption 
-    font-weight: normal !important
+  font-weight: normal !important
 
 .banner-interno__titulo__icono i
-    color: $color-acento-botones !important;
+  color: $color-acento-botones !important
+
+.banner-interno__fondo
+  background-image: url(../assets/curso/temas/bg/banner.png) !important
+  background-size: cover
+  background-repeat: no-repeat
 
 
 /**************************************************************/
 /***CUSTOM STYLES***/
 /**************************************************************/
+.fa-lista
+  li
+    display: flex !important
+    align-items: flex-start
+  li:before
+    position: relative
+    margin-right: 7px
+    font-size: 1.4rem 
 .p-full-width
-  padding: 3rem 3.5rem!important;
+  padding: 3rem 3.5rem!important
 .bg-full-width
   background-size: cover
   background-repeat: no-repeat
@@ -80,6 +90,12 @@ figcaption
     background-color: $color-acento-contenido
   &-9
     background-color: #9BA1C2 
+  &-10
+    background-color: #F7E5EE !important
+  &-11
+    background-color: #EEE9F4 !important
+  &-12
+    background-color:  #E5EEEF
 
 .subt
   display: flex
@@ -95,33 +111,76 @@ figcaption
     content: ''
     position: absolute
     background-color: #071466 
-    border-radius: 100px
     width: 100%
     height: 65%
+    left: 15px
     z-index: 0
 .subt-2
   display: flex
   align-items: center
   position: relative  
-  width: fit-content  
+  width: fit-content    
   img
-    width: 65px
+    width: 40px
     z-index: 1
-  h3 
+  h4 
     z-index: 1
   &::before
     content: ''
     position: absolute
     background-color: #025661 
-    border-radius: 100px
+    border-radius: 10px
     width: 100%
-    height: 65%
+    height: 100%
     z-index: 0
 
 
+.lista-ul--color.color-1 i
+  color: #BEABD3 !important
+.tarjeta.color-adicional-1--borde
+  border: solid 4px $color-adicional-1
+.tarjeta-audio.color-acento-botones
+  .tarjeta-audio__texto
+    color: $color-sistema-texto
+    font-style: inherit !important
+.tabla-a
+  thead
+    background-color: #E5EEEF
+    th
+      text-align: start
+.acordion
+  &__activo
+    background-color: #E6EDE9
+    .acordion__titulo h3
+      color: $color-sistema-texto !important
+  &__accion__btn--a
+    background-color: $color-acento-botones
+    i
+      color: $white
+  .acordion__titulo h3
+    color: $white    
+.tabs-a__tab
+  background-color: #F7E5EE
 
 
 
+.flecha
+  width: 40px
+  height: 60px
+  background-color: #DEE4F0
+  flex-shrink: 0
+  clip-path: polygon(
+    0 25%,
+    55% 25%,
+    55% 0,
+    100% 50%,
+    55% 100%,
+    55% 75%,
+    0 75%
+  )
+.tarj-t2 h5
+  font-size: 2rem
+  
 
 
 /**************************************************************/
@@ -147,13 +206,22 @@ figcaption
 @media screen and (max-width: $bp-min-md)
   .mb-cus
     margin-bottom: 2em  !important  
-
+  .subt
+    &::before
+      width: 97%
+      height: 95%
+      left: 20px
   
 
 //// MOBILE 576--------------------------------------
 @media screen and (max-width: $bp-min-sm)
   .mb-cus
     margin-bottom: 2em  !important
+  .subt
+    &::before
+      width: 93%
+      height: 99%
+      left: 20px
 
   
  
